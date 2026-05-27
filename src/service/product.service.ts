@@ -8,6 +8,6 @@ const filePath=path.join(process.cwd(),"./src/database/db.json");
 export const readProduct=()=>{
   
    const product= fs.readFileSync(filePath,"utf-8")
-   console.log(product);
+   // console.log(product);
    return JSON.parse(product);
 }

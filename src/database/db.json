@@ -1,7 +1,26 @@
 [
-    {
-        "id":1,
-        "name": "product-1",
-        "price":500
-    }
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "description": "A smooth and responsive wireless mouse with ergonomic design and long battery life.",
+    "price": 500
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "description": "A durable mechanical keyboard with RGB lighting and tactile key switches for fast typing.",
+    "price": 1500
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Headphones",
+    "description": "High-quality wireless headphones with deep bass, noise isolation, and comfortable ear cushions.",
+    "price": 2200
+  },
+  {
+    "id": 4,
+    "name": "USB-C Charger",
+    "description": "Fast charging USB-C adapter compatible with smartphones, tablets, and laptops.",
+    "price": 800
+  }
 ]
