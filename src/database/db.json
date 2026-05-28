@@ -22,5 +22,11 @@
     "name": "USB-C Charger",
     "description": "Fast charging USB-C adapter compatible with smartphones, tablets, and laptops.",
     "price": 800
+  },
+  {
+    "id": 1779947400785,
+    "name": "message is not sent",
+    "description": "I am a boss",
+    "price": 500
   }
 ]

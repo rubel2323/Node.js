@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from "http";
-import { readProduct } from "../service/product.service";
+import { insertProduct, readProduct } from "../service/product.service";
 import type { Iproduct } from "../types/product.type";
 import { parseBody } from "../utility/parseBody";
 
@@ -13,7 +13,7 @@ const urlparts=url?.split('/');
 
 const id=urlparts && urlparts[1]==='products'?Number(urlparts[2]):null;
 
-console.log("The id is",id)
+
 
 
 if(url==='/products' && method==="GET"){
@@ -45,9 +45,18 @@ else if(method ==="GET" && id !== null){
 
 else if(method === "POST" && url === "/products")
 {
-
+ const products=readProduct();
     const body= await parseBody(req);
-    console.log(body);
+    // console.log("Body",body)
+    const newProduct={
+        id: Date.now(),
+        ...body,
+    };
+
+    products.push(newProduct);
+    console.log(products);
+    insertProduct(products)
+
       res.writeHead(200,{"content-type": "application/json"});
     res.end(JSON.stringify(
         {

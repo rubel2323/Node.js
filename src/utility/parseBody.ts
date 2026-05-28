@@ -9,7 +9,7 @@ req.on("data",(chunk)=>{
 
 req.on("end",()=>{
     try {
-      resolve(body)  
+      resolve(JSON.parse(body));  
     } 
 
     catch (error) {

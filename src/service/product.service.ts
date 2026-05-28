@@ -11,3 +11,10 @@ export const readProduct=()=>{
    // console.log(product);
    return JSON.parse(product);
 }
+
+// write the file and send it  into db.json
+export const insertProduct=(payload:any)=>{
+   fs.writeFileSync(filePath,JSON.stringify(payload));
+   console.log(payload);
+
+}
