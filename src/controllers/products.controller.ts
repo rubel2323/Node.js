@@ -44,6 +44,7 @@ else if(method ==="GET" && id !== null){
 }
 
 else if(method === "POST" && url === "/products")
+    // created product  by Post Method
 {
  const products=readProduct();
     const body= await parseBody(req);
@@ -66,5 +67,12 @@ else if(method === "POST" && url === "/products")
     )
 ); 
 }
+
+// updated product by PUT method
+else if(method === "PUT" ){
+    
+}
+
+
 
 }
